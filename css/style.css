@@ -1,0 +1,183 @@
+:root {
+  /* Paleta de colores */
+  --salmon: #EF4444;
+  --blue: #3b82f6;
+  --green: #10b981;
+  --morado: #a855f7;
+  --cafe: #ca8a04;
+  --rosa: #ec4899;
+
+  /* Fuente principal */
+  --fuentePrincipal: 'Open Sans', sans-serif;
+  --fuenteCursiva: 'Open Sans', cursive;
+
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #f9fafb;
+  font-family: var(--fuentePrincipal);
+}
+
+.contenedor {
+  max-width: 100rem;
+  margin: 0 auto;
+  height: 120rem;
+  padding: 2rem;
+
+}
+
+.grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+@media (min-width:480px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width:768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+.box {
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.sombras__salmon {
+  box-shadow: 2px 3px 3px var(--salmon);
+}
+
+.sombras__blue {
+  box-shadow: 2px 3px 3px var(--blue);
+}
+
+.sombras__green {
+  box-shadow: 2px 3px 3px var(--green);
+}
+
+.sombras__morado {
+  box-shadow: 2px 3px 3px var(--morado);
+}
+
+.sombras__cafe {
+  box-shadow: 2px 3px 3px var(--cafe);
+}
+
+.sombras__rosado {
+  box-shadow: 2px 3px 3px var(--rosa);
+}
+
+.sombras__salmon:hover {
+  border: 2px solid var(--salmon);
+}
+
+.sombras__blue:hover {
+  border: 2px solid var(--blue);
+}
+
+.sombras__green:hover {
+  border: 2px solid var(--green);
+}
+
+.sombras__morado:hover {
+  border: 2px solid var(--morado);
+}
+
+.sombras__cafe:hover {
+  border: 2px solid var(--cafe);
+}
+
+.sombras__rosado:hover {
+  border: 2px solid var(--rosa);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  line-height: 1.6;
+}
+
+.title__salmon,
+.subtitle__salmon {
+  color: var(--salmon);
+}
+
+.title__blue,
+.subtitle__blue {
+  color: var(--blue);
+}
+
+.title__green,
+.subtitle__green {
+  color: var(--green);
+}
+
+.title__morado,
+.subtitle__morado {
+  color: var(--morado);
+}
+
+.title__cafe,
+.subtitle__cafe {
+  color: var(--cafe);
+}
+
+.title__rosado,
+.subtitle__rosado {
+  color: var(--rosa);
+}
+
+.new {
+  text-transform: uppercase;
+  color: white;
+  border-radius: 2rem;
+  padding: .3rem 1rem;
+  font-size: 1.2rem;
+}
+
+.new__salmon {
+  background-color: var(--salmon);
+}
+
+.new__blue {
+  background-color: var(--blue);
+}
+
+.new__green {
+  background-color: var(--green);
+}
+
+.new__morado {
+  background-color: var(--morado);
+}
+
+.new__cafe {
+  background-color: var(--cafe);
+}
+
+.new__rosado {
+  background-color: var(--rosa);
+}
